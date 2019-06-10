@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.1</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A5206B64-165B-4267-B3FF-0147FD66EB38}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MaSoft</RootNamespace>
+    <AssemblyName>慧学僧</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+    <Prefer32Bit>true</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>Resources\logo-128.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>86AF3D2C6A9EBF342F084BACA8A2C22A0EB7FF02</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>慧学僧打印店自动收款软件_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="HttpHelper, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\HttpHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ReachFramework" />
+    <Reference Include="SqliteSugar">
+      <HintPath>Lib\SqliteSugar.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>Lib\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="zxing, Version=0.14.0.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.14.0.1\lib\net40\zxing.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.14.0.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.14.0.1\lib\net40\zxing.presentation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code\BackgroundTask.cs" />
+    <Compile Include="Code\Common.cs" />
+    <Compile Include="Code\Dao\SugarDao.cs" />
+    <Compile Include="Code\Dialog.cs" />
+    <Compile Include="Code\LocationInfo.cs" />
+    <Compile Include="Code\Log.cs" />
+    <Compile Include="Code\Model.cs" />
+    <Compile Include="Code\NetLog.cs" />
+    <Compile Include="Code\PrinterApi.cs" />
+    <Compile Include="Code\PrintQueueMonitor.cs" />
+    <Compile Include="Code\SecretHelper.cs" />
+    <Compile Include="Code\SerializeHelper.cs" />
+    <Compile Include="Code\SignHelper.cs" />
+    <Compile Include="Code\StringHelper.cs" />
+    <Compile Include="Code\TextBoxTool.cs" />
+    <Compile Include="Code\HardwareTool.cs" />
+    <Compile Include="Code\DynamicJson.cs" />
+    <Compile Include="Code\ValidateHelper.cs" />
+    <Compile Include="Launch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Launch.Designer.cs">
+      <DependentUpon>Launch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AboutUs.Designer.cs">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MaMessage\RunOnly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MaMessage\RunOnly.Designer.cs">
+      <DependentUpon>RunOnly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Msg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Msg.Designer.cs">
+      <DependentUpon>Msg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\MaMessage\CancelOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MaMessage\CancelOrder.Designer.cs">
+      <DependentUpon>CancelOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MaMessage\DelPrintJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MaMessage\DelPrintJob.Designer.cs">
+      <DependentUpon>DelPrintJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MaMessage\DoLast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MaMessage\DoLast.Designer.cs">
+      <DependentUpon>DoLast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SelectPayWay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SelectPayWay.Designer.cs">
+      <DependentUpon>SelectPayWay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SetExtraMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SetExtraMoney.Designer.cs">
+      <DependentUpon>SetExtraMoney.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Setting.Designer.cs">
+      <DependentUpon>Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserLogout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UserLogout.Designer.cs">
+      <DependentUpon>UserLogout.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Launch.resx">
+      <DependentUpon>Launch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AboutUs.resx">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MaMessage\RunOnly.resx">
+      <DependentUpon>RunOnly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Msg.resx">
+      <DependentUpon>Msg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MaMessage\CancelOrder.resx">
+      <DependentUpon>CancelOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MaMessage\DelPrintJob.resx">
+      <DependentUpon>DelPrintJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MaMessage\DoLast.resx">
+      <DependentUpon>DoLast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SelectPayWay.resx">
+      <DependentUpon>SelectPayWay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SetExtraMoney.resx">
+      <DependentUpon>SetExtraMoney.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Setting.resx">
+      <DependentUpon>Setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserLogout.resx">
+      <DependentUpon>UserLogout.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\all-min-no.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\all-min-yes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\all-close-yes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\all-close-no.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-username.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-256.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-128.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-64.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-48.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-24.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\launch-bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\launch-line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\launch-del.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MessageBox_warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MessageBox_error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MessageBox_ask.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MessageBox_info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MessageBox_close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MessageBox_close_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pay-wx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pay-qcode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pay-boxbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print-do.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panla-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about-wxqcode.png" />
+    <None Include="Resources\tool_about.png" />
+    <None Include="Resources\tol_setting.png" />
+    <None Include="Resources\tool_dataSync.png" />
+    <None Include="Resources\logo-black-128.ico" />
+    <None Include="Resources\logo-black.png" />
+    <None Include="Resources\logo-black-64.ico" />
+    <None Include="Resources\pay_noqcode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lib\HPSocket4C_U.dll" />
+    <Content Include="Lib\HPSocketCS.dll" />
+    <Content Include="Lib\HttpHelper.dll" />
+    <Content Include="Lib\Newtonsoft.Json.dll" />
+    <Content Include="Lib\PrinterApi.dll" />
+    <Content Include="Lib\SkinForm.dll" />
+    <Content Include="Lib\SqliteSugar.dll" />
+    <Content Include="Lib\SqliteSugar.XML" />
+    <Content Include="Lib\System.Data.SQLite.dll" />
+    <Content Include="Lib\System.Data.SQLite.xml" />
+    <None Include="Resources\login-btn-c.png" />
+    <None Include="Resources\login-btn.png" />
+    <None Include="Resources\bg-alert.png" />
+    <None Include="Resources\bg-320-323.png" />
+    <None Include="Resources\bg-330-200.png" />
+    <None Include="Resources\main_bkg.png" />
+    <None Include="Resources\bg-launch.png" />
+    <None Include="Resources\bg-login.png" />
+    <None Include="Resources\pay_qcodeing.png" />
+    <None Include="Resources\pay-ali.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="en\SimpleUpdater.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="Lib\HttpHelper.dll">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Reactor_Enabled="0" Reactor_Commands="-compression 1 -antitamp 1 -control_flow_obfuscation 1 -flow_level 9" Reactor_Project="" Reactor_Configuration="ALL" Reactor_Output="&lt;AssemblyLocation&gt;\&lt;AssemblyFileName&gt;" Reactor_Deploy="0" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

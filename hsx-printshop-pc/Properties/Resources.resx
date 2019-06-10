@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="all_close_no" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\all-close-no.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="all_close_yes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\all-close-yes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="all_min_no" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\all-min-no.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="all_min_yes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\all-min-yes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="launch_bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\launch-bar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="launch_del" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\launch-del.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="launch_line" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\launch-line.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login_bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login-bar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login_password" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login-password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login_username" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login-username.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo-128.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo-16.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo-24.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo-256.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo-32.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo-48.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo-64.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessageBox_ask" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MessageBox_ask.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessageBox_error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MessageBox_error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessageBox_info" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MessageBox_info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessageBox_warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MessageBox_warning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessageBox_close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MessageBox_close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessageBox_close_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MessageBox_close_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="panla_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\panla-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pay_boxbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pay-boxbg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pay_qcode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pay-qcode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pay_wx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pay-wx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="print_do" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\print-do.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ServiceOrderQuery" xml:space="preserve">
+    <value>/api/printorder/selectprintorderpayment</value>
+    <comment>订单查询接口</comment>
+  </data>
+  <data name="ServiceReferOrder" xml:space="preserve">
+    <value>/api/printorder/saveprintorderpc</value>
+    <comment>订单提交接口</comment>
+  </data>
+  <data name="ServiceReferPayType" xml:space="preserve">
+    <value>/api/printorder/saveprintorderpayment</value>
+    <comment>订单支付类型提交接口</comment>
+  </data>
+  <data name="ServiceUpdatePrinters" xml:space="preserve">
+    <value>/api/printshopprinter/saveprintshopprinterlist</value>
+    <comment>打印机更新接口</comment>
+  </data>
+  <data name="ServiceUpdateSoft" xml:space="preserve">
+    <value>/api/versionpc/selectversionpc</value>
+    <comment>软件更新接口</comment>
+  </data>
+  <data name="ServiceUrl" xml:space="preserve">
+    <value>http://api.huixueseng.cn</value>
+    <comment>服务器地址</comment>
+  </data>
+  <data name="ServiceUserLogin" xml:space="preserve">
+    <value>/api/user/loginpc</value>
+    <comment>用户登录接口</comment>
+  </data>
+  <data name="pay_noqcode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pay_noqcode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo-black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_black_128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo-black-128.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_black_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo-black-64.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tool_dataSync" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tool_dataSync.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tol_setting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tol_setting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tool_about" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tool_about.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="about_wxqcode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\about-wxqcode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pay_ali" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pay-ali.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pay_qcodeing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pay_qcodeing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PayQrCode" xml:space="preserve">
+    <value>/pay?oud=</value>
+    <comment>生成支付二维码</comment>
+  </data>
+  <data name="MonitorIp" xml:space="preserve">
+    <value>192.168.1.1</value>
+    <comment>监听IP地址</comment>
+  </data>
+  <data name="MonitorPort" xml:space="preserve">
+    <value>10930</value>
+    <comment>监听端口</comment>
+  </data>
+  <data name="bg_launch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg-launch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg_login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg-login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg_320_323" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg-320-323.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg_330_200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg-330-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg_alert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg-alert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login-btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login_btn_c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login-btn-c.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ScanPayUrl" xml:space="preserve">
+    <value>/wx/wxLogin?orderNumber=</value>
+    <comment>扫码支付WEB地址</comment>
+  </data>
+</root>
